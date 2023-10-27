@@ -100,7 +100,7 @@ const ProfileScreen = () => {
                 { loadingUpdateProfile && <Loader />}
             </Form>
             </Col>
-        <Col md={9}>My Orders</Col>
+        <Col md={9}>My Orders
         { isLoading? <Loader /> : error? (<Message variant='danger'>
             { error?.data?.message || error.error }
         </Message>) : (
@@ -147,6 +147,7 @@ const ProfileScreen = () => {
                 </tbody>
             </Table>
         )}
+        </Col>
     </Row>
   )
 }
