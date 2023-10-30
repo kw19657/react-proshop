@@ -42,4 +42,4 @@ function fileFilter(req, file, cb) {
     });
   });
 
-export default router;
+export default router
